@@ -1,0 +1,18 @@
+.banner.block.inset:before {
+    content: ""!important;
+    border-top-right-radius: 0!important;
+    border-bottom-left-radius: 4px!important;
+    height: auto!important;
+    width: .4rem!important;
+    right: auto!important;
+    bottom: -1px!important;
+    position: absolute!important;
+    top: -1px!important;
+    left: -1px!important;
+    border-top-left-radius: 4px!important;
+    background: #ededed;
+    .info{
+        
+    background: #ffaf0f;
+    }
+}

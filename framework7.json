@@ -1,0 +1,26 @@
+{
+  "cwd": "/Users/eleonora/Documents/GitHub/app-merchant",
+  "type": [
+    "capacitor"
+  ],
+  "name": "Ceebo Ristorante",
+  "framework": "react",
+  "template": "split-view",
+  "bundler": "vite",
+  "cssPreProcessor": "scss",
+  "theming": {
+    "customColor": false,
+    "color": "#007aff",
+    "darkTheme": false,
+    "iconFonts": true,
+    "fillBars": false
+  },
+  "customBuild": false,
+  "pkg": "ceebo.ristorant",
+  "capacitor": {
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  }
+}

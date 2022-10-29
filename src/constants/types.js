@@ -1,0 +1,18 @@
+// User Actions
+export const USER_LOADING = 'USER_LOADING';
+export const USER_LOADED = 'USER_LOADED';
+export const USER_REMOVE = 'USER_REMOVE';
+export const USER_UPDATED = 'USER_UPDATED';
+export const USER_ERROR = 'USER_ERROR';
+
+export const LISTING_LOADING = 'LISTING_LOADING';
+export const LISTING_LOADED = 'LISTING_LOADED';
+export const LISTING_REMOVE = 'LISTING_REMOVE';
+export const LISTING_UPDATED = 'LISTING_UPDATED';
+export const LISTING_ERROR = 'LISTING_ERROR';
+
+export const ADDRESS_ERROR = 'ADDRESS_ERROR';
+export const ADDRESS_LOADED = 'ADDRESS_LOADED';
+export const ADDRESS_LOADING = 'ADDRESS_LOADING';
+export const ADDRESS_DELETED = 'ADDRESS_DELETED';
+

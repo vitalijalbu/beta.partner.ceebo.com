@@ -1,0 +1,354 @@
+/* Left Panel right border when it is visible by breakpoint */
+.panel-left.panel-in-breakpoint:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+.text-bold, .text-bold * {
+  font-weight: 600 !important;
+}
+.text-color-primary * {
+  color: var(--f7-theme-color) !important;
+}
+.identity_logo{
+  height: 2.5rem;
+  width: auto;
+}
+.page-content > .preloader {
+  margin: 1rem auto;
+  position: relative;
+  display: block;
+  padding: 30px;
+}
+.login-screen-page .page-content{
+  padding: 15px;
+}
+/*
+  Extra borders for main view and left panel for iOS theme when it behaves as panel (before breakpoint size)
+*/
+.ios .panel-left:not(.panel-in-breakpoint).panel-in ~ .view-main:before,
+.ios .panel-left:not(.panel-in-breakpoint).panel-closing ~ .view-main:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+.tabbar .tab-link-active, .tabbar-labels .tab-link-active {
+  color: var(--f7-tabbar-link-active-color, var(--f7-theme-color));
+  background-color: var(--f7-button-pressed-bg-color,rgba(var(--f7-theme-color-rgb),.15));
+  box-shadow: inset 0 -2px 0px var(--f7-theme-color);
+}
+.page-detail-placeholder {
+  display: none;
+}
+.item-media > img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+ /* Spacing & Grid */
+.row {
+    justify-content: flex-start;
+}
+.row > [class*='col-'], .row > .col{
+  padding: var(--f7-grid-gap);
+ }
+ .row .medium-25 {
+  width: 25%;
+} 
+.row .medium-50 {
+  width: 50%;
+}
+
+
+
+ .fixed-bottom {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+ .mt-0{
+   margin-top: 0 !important;
+ }
+.m-0{
+  margin: 0 !important;
+}
+.mb-3{
+  margin-bottom: 3em !important;
+}
+.mb-2 {
+  margin-bottom: 2em !important;
+}
+.mb-1 {
+  margin-bottom: 1em !important;
+}
+
+.button{
+  & svg{
+    height: 20px;
+    width: 20px;
+    margin-right: 4px;
+  }
+  .button-outline svg {
+    fill: var(--f7-theme-color);
+  }
+  .button-fill svg {
+    fill: #fff;
+  }
+}
+.close.button {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  //background: #007aff14;
+}
+
+/* Cards */
+.auth-card {
+  padding: 30px 40px;
+  max-width: var(--f7-login-screen-blocks-max-width);
+  margin: auto;
+}
+.card-img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  border-top-right-radius: var(--f7-card-border-radius);
+  border-top-left-radius: var(--f7-card-border-radius);
+}
+.text-danger,
+.text-danger:before,
+.text-danger:after, 
+.text-danger *{
+  color: #dc3545 !important;
+}
+
+.text-price {
+  color: var(--f7-theme-color);
+}
+
+.page-master-detail, .page-master{
+  padding-bottom: 60px;
+}
+/*
+.view-master-detail .page-detail-placeholder {
+  display: block;
+  position: absolute;
+  left: var(--f7-page-master-width);
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.toolbar-top{
+  top: 0 !important;
+}
+*/
+.list .item-media{
+  color: var(--f7-tabbar-link-inactive-color);
+}
+
+
+.empty-state {
+  font-weight: 500;
+  color: #868686;
+}
+
+/* Toasts */
+.toast-button{
+  color: #fff;
+}
+/*.toast.success {
+  background: var(--success);
+}*/
+.toast.danger {
+  background: var(--danger);
+}
+
+/* Panels */
+#menu-footer {
+  z-index: 5998;
+  position: fixed;
+  width: 100%;
+}
+.panel-backdrop{
+  background-color: rgba(0,0,0,.30);
+}
+.icon > svg {
+  height: 22px;
+  width: auto;
+  fill: #5C5F62;
+}
+.tab-link-active svg{
+  fill: var(--f7-theme-color);
+}
+.tab-footer {
+  height: auto;
+  padding: var(--f7-typography-padding) !important;
+  bottom: 0;
+  position: absolute;
+}
+
+/* Orders */
+.dialog.notify {
+  width: 400px;
+  margin-left: calc(-1 * 400px / 2);
+}
+
+.dialog.notify .dialog-inner {
+  padding: 40px 20px;
+}
+
+.dialog.notify .dialog-title {
+  font-size: 24px;
+}
+
+.item-modifiers {
+  color: var(--muted);
+  font-size: 14px;
+}
+.item-modifiers .item-title.after{
+  content: none;
+}
+
+#map-block {
+  height: calc(400px - (var(--f7-navbar-height) + var(--f7-safe-area-top)));
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.map-container {
+ height: 100%;
+}
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+}
+
+
+.product-badge{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  box-shadow: var(--f7-card-box-shadow);
+}
+/* 
+  Beautiful Colored Background
+*/
+
+@media screen and (min-width: 46.875em) {
+  .v3_color_burst {
+    background-image: radial-gradient(
+        circle at 5% 0%,
+        rgba(216, 239, 85, 0.2) 15%,
+        transparent 35%
+      ),
+      radial-gradient(
+        circle at 0% 0%,
+        rgba(144, 222, 251, 0.32) 9%,
+        transparent 16%
+      ),
+      radial-gradient(
+        circle at 100% 50%,
+        rgba(216, 239, 85, 0.25) 5%,
+        transparent 30%
+      ),
+      radial-gradient(
+        circle at 100% 50%,
+        rgba(144, 222, 251, 0.25) 8%,
+        transparent 20%
+      ),
+      radial-gradient(
+        circle at 5% 81%,
+        rgba(216, 239, 85, 0.13) 11%,
+        transparent 24%
+      ),
+      radial-gradient(
+        circle at 0% 84%,
+        rgba(144, 222, 251, 0.4) 2.5%,
+        transparent 14%
+      );
+  }
+}
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  /* CSS */
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .panel{
+    width: 100%;
+  }
+  
+}
