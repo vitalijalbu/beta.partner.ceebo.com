@@ -48,7 +48,7 @@ import Checkout from "../pages/Checkout/";
 import NotFoundPage from "../pages/404";
 
 
-/* Get user localstorage */
+/* Get user localstorage 
 const userData = Preferences.get({ key: "user" });
 
 function checkAuth({ to, from, resolve, router, reject }) {
@@ -62,7 +62,7 @@ function checkAuth({ to, from, resolve, router, reject }) {
     reject();
     f7.view.main.router.navigate('/login');
   }
-}
+}*/
 
 const routes = [
   {
@@ -71,7 +71,7 @@ const routes = [
   },
   {
     path: "/",
-    component: Login,
+    component: Home,
   },  
   {
     path: "/login",
@@ -85,14 +85,14 @@ const routes = [
     name: 'home',
     path: "/home",
     component: Home,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
     // detail routes
     detailRoutes: [
       {
         path: "/home/:id",
         component: HomeView,
-        beforeEnter: checkAuth,
+        //beforeEnter: checkAuth,
       },
     ],
   },
@@ -100,14 +100,14 @@ const routes = [
     name: 'delivery',
     path: "/delivery",
     component: Delivery,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
      // detail routes
      detailRoutes: [
       {
         path: "/delivery/:id",
         component: DeliveryView,
-        beforeEnter: checkAuth,
+        //beforeEnter: checkAuth,
       },
     ],
   },
@@ -115,7 +115,7 @@ const routes = [
     name: 'pickup',
     path: "/pickup",
     component: Pickup,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
      // detail routes
      detailRoutes: [
@@ -129,7 +129,7 @@ const routes = [
     name: 'orders',
     path: "/orders",
     component: Orders,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
      // detail routes
      detailRoutes: [
@@ -143,7 +143,7 @@ const routes = [
     name: 'couriers',
     path: "/couriers",
     component: Couriers,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
      // detail routes
      detailRoutes: [
@@ -165,7 +165,7 @@ const routes = [
     name: 'customers',
     path: "/customers",
     component: Customers,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
      // detail routes
      detailRoutes: [
@@ -179,7 +179,7 @@ const routes = [
     name: 'reports',
     path: "/reports",
     component: Reports,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
      // detail routes
      detailRoutes: [
       {
@@ -196,7 +196,7 @@ const routes = [
     name: "settings",
     path: "/settings",
     component: Settings,
-    beforeEnter: checkAuth,
+    //beforeEnter: checkAuth,
     master: true,
     // detail routes
     detailRoutes: [
