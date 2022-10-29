@@ -6,7 +6,7 @@ const token = await Preferences.get({ key: "auth_token" });
 const listing_storage = await Preferences.get({ key: "listing" });
 
 const listing_id = JSON.parse(listing_storage.value);
-//console.log(' JSON.parse', listing_id.id);
+console.log(' JSON.parse', listing_id?.id);
 
 const instance = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL,

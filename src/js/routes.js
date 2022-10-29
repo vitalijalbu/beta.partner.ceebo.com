@@ -70,6 +70,10 @@ const routes = [
     component: Login,
   },
   {
+    path: "/",
+    component: Login,
+  },  
+  {
     path: "/login",
     component: Login,
   },

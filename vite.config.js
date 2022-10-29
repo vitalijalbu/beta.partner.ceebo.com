@@ -19,6 +19,7 @@ export default {
   build: {
     outDir: BUILD_DIR,
     assetsInlineLimit: 0,
+    target: 'esnext',
     emptyOutDir: true,
     rollupOptions: {
       treeshake: false,
@@ -31,6 +32,5 @@ export default {
   },
   server: {
     host: true
-  },
-
+  }
 };
